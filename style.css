@@ -1,0 +1,40 @@
+html{
+background-color: rgb(235, 197, 219);
+padding: 20px;
+border: 3px solid black;
+}
+
+img{
+    height: 300px;
+    width: 250px;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #f0a3d2;
+}
+.nav-links {
+display: flex;
+gap: 20px;
+list-style: none;
+}
+
+.nav-links a {
+color: black;
+text-decoration: none;
+}
+
+.titulo{
+    color: black;
+}
+
+.seccion-cards{
+    display: flexbox;
+    position: relative;
+}
+
+.card{
+    position: absolute;
+}
