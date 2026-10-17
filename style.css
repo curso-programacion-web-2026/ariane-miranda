@@ -31,10 +31,9 @@ text-decoration: none;
 }
 
 .seccion-cards{
-    display: flexbox;
+    display: flex;
     position: relative;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.card{
-    position: absolute;
-}
