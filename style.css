@@ -36,4 +36,64 @@ text-decoration: none;
     flex-wrap: wrap;
     gap: 30px;
 }
+#volverArriba {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 12px 18px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+}
+
+#volverArriba {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 12px 18px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 16px;
+}
+
+body {
+font-family: Arial;
+}
+.contenedor {
+width: 400px;
+margin: 50px auto;
+}
+form {
+display: flex;
+flex-direction: column;
+}
+input,
+textarea {
+margin-bottom: 10px;
+padding: 5px;
+}
+button {
+padding: 5px;
+margin-top: 10px;
+}
+const formulario = document.getElementById("formulario");
+formulario.addEventListener("submit", function(event) {
+event.preventDefault();
+const nombre = document.getElementById("nombre").value.trim();
+const email = document.getElementById("email").value.trim();
+const mensaje = document.getElementById("mensaje").value.trim();
+const resultado = document.getElementById("resultado");
+if (nombre === "" || email === "" || mensaje === "") {
+resultado.textContent = "Por favor, completá todos los campos.";
+} else {
+resultado.textContent = "¡Mensaje enviado correctamente!";
+formulario.reset();
+}
+});
+
+
 
