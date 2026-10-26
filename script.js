@@ -1,5 +1,5 @@
 <script src="script.js"></script>
-const boton = document.getElementById("botonCambiar");
+const botton = document.getElementById("botonCambiar");
 const titulo = document.getElementById("titulo");
 let contador = 0;
 boton.addEventListener("click", function () {
